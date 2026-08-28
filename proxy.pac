@@ -4,8 +4,8 @@ function FindProxyForURL(url, host){
   if (
       host == "login.microsoftonline.com" ||
       host == "login.microsoft.com" ||
-      shExpMathc(host, "*.msauth.net") ||
-      shExpMathc(host, "*.msftauth.net") 
+      shExpMatch(host, "*.msauth.net") ||
+      shExpMatch(host, "*.msftauth.net") 
   ){
       return "PROXY proxy.test.123.sb.jp:8080";
   }
