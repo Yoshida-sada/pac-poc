@@ -1,11 +1,11 @@
 function FindProxyForURL(url, host){
-  host = host.toLowerCase);
+  host = host.toLowerCase();
 
   if (
       host == "login.microsoftonline.com" ||
       host == "login.microsoft.com" ||
-      shExpMathch(host, "*.msauth.net") ||
-      shExpMathch(host, "*.msftauth.net") 
+      shExpMathc(host, "*.msauth.net") ||
+      shExpMathc(host, "*.msftauth.net") 
   ){
       return "PROXY proxy.test.123.sb.jp:8080";
   }
